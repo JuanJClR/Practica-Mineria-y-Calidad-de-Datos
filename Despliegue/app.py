@@ -6,7 +6,7 @@ import pickle
 # Cargar modelo
 filename = 'modelo_rf.pkl'
 with open(filename, 'rb') as f:
-    model_rf, labelencoder, variables, min_max_scaler = pickle.load(f)
+    best_rf, labelencoder, variables, min_max_scaler = pickle.load(f)
 
 st.title('Predicción de Calidad del Aire')
 
